@@ -6,6 +6,6 @@ Nuestra tabla de pagos históricos tiene 2 mil millones de registros. Los report
 1. Diagnóstico Inicial.
    - ¿Cuáles serían tus primeros 5 queries para entender el problema?  
      [Queries Profiling Redhift](deliverables/pagos_historicos_query_profiling.sql)
-   - ¿Qué información buscarías en las tablas del sistema (STL_QUERY, etc.)?
-     [Guía profiling queries en Redshift](documentation/guiaConsultasProfilingRedshift.md)
+   - ¿Qué información buscarías en las tablas del sistema (STL_QUERY, etc.)?  
+     [Guía profiling queries en Redshift](documentacion/guiaConsultasProfilingRedshift.md)
    - Si has enfrentado un caso similar, ¿qué descubriste que causaba el problema?
