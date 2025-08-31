@@ -1,6 +1,6 @@
 # Podemos Progresar
 
-## 🚀 Ejercicio uno.
+## 🚀 Ejercicio uno.https://github.com/ArturoMorenoSBU/podemos-progresar-dataeng-challenge/blob/main/README.md
 
 ### Contexto del Problema
 Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
@@ -27,4 +27,6 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 
 ### 3. Lecciones aprendida
 
-[Banco de conocimiento Redshift](documentacion/leccionesAprendidas.md)
+[Banco de conocimiento Redshift](documentacion/leccionesAprendidasRedshift.md)
+
+
