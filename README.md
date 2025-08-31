@@ -1,6 +1,6 @@
 # Podemos Progresar
 
-## 🚀 Sección uno.
+## 🚀 Ejercicio uno.
 
 ### Contexto del Problema
 Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
@@ -23,3 +23,8 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 ### 2. Propuesta de Solución
 
 [Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
+
+
+### 2. Lecciones aprendida
+
+[Banco de conocimiento Redshift](leccionesAprendidas.md)
