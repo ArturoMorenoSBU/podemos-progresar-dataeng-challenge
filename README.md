@@ -21,3 +21,5 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 ---
 
 ### 2. Propuesta de Solución
+
+[Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
