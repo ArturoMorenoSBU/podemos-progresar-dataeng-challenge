@@ -20,13 +20,19 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 
 ---
 
-### 2. Propuesta de Solución
-
+### 2. Propuesta de Solución  
 [Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
 
 
-### 3. Lecciones aprendida
-
+### 3. Manejo de casos edge  
 [Banco de conocimiento Redshift](documentacion/leccionesAprendidasRedshift.md)
 
+## 🚀 Ejercicio dos.
+
+### Contexto del Problema
+Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
+
+### 1. Diseño de arquitectura AWS
+### 2. Manejo de casos edge
+### 3. Experiencias y aprendizajes
 
