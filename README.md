@@ -1,6 +1,6 @@
 # Podemos Progresar
 
-## 🚀 Ejercicio uno.https://github.com/ArturoMorenoSBU/podemos-progresar-dataeng-challenge/blob/main/README.md
+## 🚀 Ejercicio uno.
 
 ### Contexto del Problema
 Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
