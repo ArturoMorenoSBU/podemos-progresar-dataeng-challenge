@@ -27,4 +27,4 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 
 ### 2. Lecciones aprendida
 
-[Banco de conocimiento Redshift](leccionesAprendidas.md)
+[Banco de conocimiento Redshift](documentacion/leccionesAprendidas.md)
