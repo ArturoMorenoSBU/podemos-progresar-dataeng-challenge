@@ -25,6 +25,6 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 [Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
 
 
-### 2. Lecciones aprendida
+### 3. Lecciones aprendida
 
 [Banco de conocimiento Redshift](documentacion/leccionesAprendidas.md)
