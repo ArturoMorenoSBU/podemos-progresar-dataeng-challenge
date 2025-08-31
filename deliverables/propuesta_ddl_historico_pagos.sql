@@ -37,6 +37,9 @@ COMMENT ON COLUMN pagos_historicos_optimizada.otros_datos IS 'Campo genérico pa
 --   Enfocado a reducir el I/O (operaciones de input y output)
 --   Al enfocarse los reportes en algún periodo de tiempo y por ciertos IDs, Redshift puede dirigirse directamente a leer los bloques con información relevante y no escanear toda la tabla.
 
+-- Encoding
+-- ZSTD para equilibrio entre compresión y alta descomprensión. Es un encoding moderna y eficiente.
+-- Otro encoding sería para escenarios más especificos como RAW, AZ64. etc
 
 -- Consideraciones de negocio.
 --   Se consideró un diseño de "bigTable" pensando en el tipo de preguntas que se necesitan responder; como montos de préstamos pagados en un intervalo de tiempo o segmentados por cliente y sucursal.
