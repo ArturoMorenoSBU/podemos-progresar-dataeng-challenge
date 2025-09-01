@@ -50,3 +50,21 @@ Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos 
 [AWS pipeline serverless](deliverables/pipeline_serverless.md)
 ### 3. Observabilidad y monitoreo  
 [Estrategia metricas y monitoreo](deliverables/monitoreo_flujo_campo.md)
+
+
+## 🚀 Ejercicio cuatro.
+
+### Contexto del Problema
+El regulador requiere un reporte consolidado diario a las 6am con todos los movimientos del día anterior. El incumplimiento implica multas significativas.
+Consideraciones:
+- Datos provienen de 15 sistemas diferentes
+- Algunos sistemas se actualizan hasta las 4am
+- Alta disponibilidad es crítica
+- Precisión al centavo es mandatoria
+- Capacidad de regenerar reportes históricos
+### 1. Arquitectura resiliente
+[Estrategia para offline-first](deliverables/offline-first.md)
+### 2. Orquestación con Step Functions 
+[AWS pipeline serverless](deliverables/pipeline_serverless.md)
+### 3. Decisiones críticas
+[Estrategia metricas y monitoreo](deliverables/monitoreo_flujo_campo.md)
