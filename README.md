@@ -45,8 +45,8 @@ Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conec
 Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos capturar eventos (geolocalización, fotos de pagos, confirmaciones) con conectividad limitada o nula.
 
 ### 1. Estrategia offline-first
-[Propuesta de solución](deliverables/AWS_arq_sucursales_propuesta_v1.md)
+[Estrategia para offline-first](deliverables/offline-first.md)
 ### 2. Pipeline de procesamiento serverless  
-[Glue/PySpark Job](deliverables/casos_edge.py)
+[AWS pipeline serverless](deliverables/pipeline_serverless.md)
 ### 3. Observabilidad y monitoreo  
-[Banco de conocimiento ETL](documentacion/experienciasETL.md)
+[Estrategia metricas y monitoreo](monitoreo_flujo_campo.md)
