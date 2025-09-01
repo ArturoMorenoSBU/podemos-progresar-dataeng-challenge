@@ -25,3 +25,5 @@
 - Con el job de glue candelarizado y los event-drive jobs de Glue, asegurariamos tener la data de las sucursales disponibles en un marco de tiempo.
 - Es super flexible si los requerimientos de negocio lo necesitan
 ### Un diagrama simple es suficiente (puede ser a mano)
+<img width="778" height="474" alt="Screenshot 2025-08-31 at 8 52 43 p m" src="https://github.com/user-attachments/assets/87dab827-020a-4a6f-b8ab-6c548e995f0a" />
+
