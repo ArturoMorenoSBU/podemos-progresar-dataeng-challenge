@@ -49,4 +49,4 @@ Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos 
 ### 2. Pipeline de procesamiento serverless  
 [AWS pipeline serverless](deliverables/pipeline_serverless.md)
 ### 3. Observabilidad y monitoreo  
-[Estrategia metricas y monitoreo](monitoreo_flujo_campo.md)
+[Estrategia metricas y monitoreo](deliverables/monitoreo_flujo_campo.md)
