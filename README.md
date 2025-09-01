@@ -35,6 +35,6 @@ Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conec
 ### 1. Diseño de arquitectura AWS  
 [Propuesta de solución](deliverables/AWS_arq_sucursales_propuesta_v1.md)
 ### 2. Manejo de casos edge  
-[Propuesta de solución](deliverables/casos_edge.py)
+[Glue/PySpark Job](deliverables/casos_edge.py)
 ### 3. Experiencias y aprendizajes  
 [Banco de conocimiento ETL](documentacion/experienciasETL.md)
