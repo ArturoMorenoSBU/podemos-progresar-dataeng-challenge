@@ -29,12 +29,24 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 
 ## 🚀 Ejercicio dos.
 
-### Contexto del Problema
-Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conectividad es intermitente, los datos pueden llegar con días de retraso y ocasionalmente duplicados.
+### Contexto
+Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conectividad es intermitente; los datos pueden llegar con días de retraso y ocasionalmente duplicados.
 
 ### 1. Diseño de arquitectura AWS  
 [Propuesta de solución](deliverables/AWS_arq_sucursales_propuesta_v1.md)
 ### 2. Manejo de casos edge  
 [Glue/PySpark Job](deliverables/casos_edge.py)
 ### 3. Experiencias y aprendizajes  
+[Banco de conocimiento ETL](documentacion/experienciasETL.md)
+
+## 🚀 Ejercicio tres.
+
+### Contexto del Problema
+Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos capturar eventos (geolocalización, fotos de pagos, confirmaciones) con conectividad limitada o nula.
+
+### 1. Estrategia offline-first
+[Propuesta de solución](deliverables/AWS_arq_sucursales_propuesta_v1.md)
+### 2. Pipeline de procesamiento serverless  
+[Glue/PySpark Job](deliverables/casos_edge.py)
+### 3. Observabilidad y monitoreo  
 [Banco de conocimiento ETL](documentacion/experienciasETL.md)
