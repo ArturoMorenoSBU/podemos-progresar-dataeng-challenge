@@ -10,4 +10,4 @@
 - Al final se cambió el data source por una base de datos de postgres que era la base de la construcción del pdf.
 ### ¿Qué harías diferente hoy?
 - Aplicar una regulación sobre las fuentes de datos aceptables para consumo.
-- En un doloroso caso de no poder traer la data desde su sistema origen (restricciones por sensibilidad de datos, región, etc) poderlo traer desde una fuente no volátil y que el linaje de datos est´s muy bien documentado desde origen a esa fuente.
+- En un doloroso caso de no poder traer la data desde su sistema origen (restricciones por sensibilidad de datos, región, etc) poderlo traer desde una fuente no volátil y que el linaje de datos esté muy bien documentado desde origen a esa fuente.
