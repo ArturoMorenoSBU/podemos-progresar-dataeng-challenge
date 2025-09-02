@@ -65,6 +65,6 @@ Consideraciones:
 ### 1. Arquitectura resiliente
 [Arquitectura resiliente AWS](deliverables/propuesta_solucion_cumpRegulatorio.md)
 ### 2. Orquestación con Step Functions 
-[AWS pipeline serverless](deliverables/step_functions_reporte_regulatorio.md)
+[StepFunctions Propuesta](deliverables/step_functions_reporte_regulatorio.md)
 ### 3. Decisiones críticas
-[Estrategia metricas y monitoreo](deliverables/decisiones_criticas_cumpReg.md)
+[Plan de contigencia y decisiones críticas](deliverables/decisiones_criticas_cumpReg.md)
