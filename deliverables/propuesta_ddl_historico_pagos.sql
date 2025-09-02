@@ -14,7 +14,7 @@ DISTKEY (id_cliente)
 SORTKEY (fecha_pago, id_cliente);
 
 
--- Metadatos que residen en el esquema para el gobierno de datos. Útil para organizar metadata en DataZone
+-- Metadatos que residen en el esquema para el gobierno de datos. Útil para organizar metadata en DataZone. En mi paso por BBVA y WALMART los comentarios en las columnas de las tablas análiticas era crucial, no sólo era parte del marco de gobierno, también ayudaba al compliance y a los asuntos regulatorios.
 COMMENT ON COLUMN pagos_historicos_optimizada.id_pago IS 'Identificador único y primario de cada transacción de pago. Origen: Sistema de pagos (PK).';
 COMMENT ON COLUMN pagos_historicos_optimizada.id_prestamo IS 'Clave foránea que enlaza el pago con la tabla de préstamos. Origen: Sistema de préstamos.';
 COMMENT ON COLUMN pagos_historicos_optimizada.id_cliente IS 'Clave de distribución (DISTKEY). Identificador del cliente. Utilizado para agrupar pagos de un mismo cliente en un nodo de cómputo. Origen: CRM.';
