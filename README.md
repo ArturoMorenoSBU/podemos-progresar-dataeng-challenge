@@ -63,7 +63,7 @@ Consideraciones:
 - Precisión al centavo es mandatoria
 - Capacidad de regenerar reportes históricos
 ### 1. Arquitectura resiliente
-[Estrategia para offline-first](deliverables/offline-first.md)
+[Arquitectura resiliente AWS](deliverables/propuesta_solucion_cumpRegulatorio.md)
 ### 2. Orquestación con Step Functions 
 [AWS pipeline serverless](deliverables/pipeline_serverless.md)
 ### 3. Decisiones críticas
