@@ -1,3 +1,4 @@
+-- Este es un flujo que usé con un cliente para optimizar/reparar consultas en Redshift.
 -- 1. Primero se busca identificar el síntoma principal; si no sabemos qué está lento, no podemos identificar la causa.
 SELECT query,
        elapsed,
