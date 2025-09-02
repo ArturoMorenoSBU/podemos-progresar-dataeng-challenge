@@ -1,7 +1,7 @@
 
 ## Guía de Análisis de Rendimiento en Redshift
 
-Esta guía es un documento de apoyo para las partes interesadas independientemente de su perfil y nivel técnico. Se busca una mejor comprensión del análisis de profiling sobre la tabla de Pagos Históricos.
+Esta guía es un documento de apoyo para las partes interesadas independientemente de su perfil y nivel técnico. Se busca una mejor comprensión del análisis de profiling sobre la tabla de Pagos Históricos. Por experiencia, tener documentadas las consultas importantes ayudan a ala adaptación de personal nuevo y abre campo para la mejora de procesos.
 
 ### ¿Qué buscar en las tablas del sistema?
 
