@@ -1,75 +1,86 @@
 # Podemos Progresar
 
-## 🚀 Ejercicio uno. OPTIMIZACIÓN DE REDSHIFT - CASOS REALES 
-
-### Contexto del Problema
-Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
+Este repositorio contiene las propuestas técnicas para resolver desafíos de ingeniería de datos, optimización y cumplimiento regulatorio, adaptadas a las necesidades de una microfinanciera como Podemos Progresar.
 
 ---
 
-### 1. Diagnóstico Inicial.
+## 🚀 Ejercicio 1: Optimización de Redshift
 
-* **¿Cuáles serían tus primeros 5 queries para entender el problema?  
-  [Queries profiling redshift](deliverables/pagos_historicos_query_profiling.sql).
+**Objetivo:** Mejorar el rendimiento de los reportes críticos en una tabla histórica de pagos de 2 mil millones de registros, cuyo tiempo de ejecución ha pasado de 5 a 45 minutos.
 
-* **¿Qué información buscarías en las tablas del sistema (STL_QUERY, etc.)?  
-  [Guía profiling queries en Redshift](documentacion/guiaConsultasProfilingRedshift.md)
-  
-* **Si has enfrentado un caso similar, ¿qué descubriste que causaba el problema?  
-  [Banco de conocimiento Experiencias Redshift](documentacion/experienciasRedshift.md)
+### **1. Diagnóstico Inicial**
+
+* **Queries de Diagnóstico:** 
+    * [Queries de profiling en Redshift](deliverables/pagos_historicos_query_profiling.sql)
+* **Información de Tablas del Sistema:** 
+    * [Guía de consultas para profiling en Redshift](documentacion/guiaConsultasProfilingRedshift.md)
+* **Casos de la Vida Real:** 
+    * [Banco de conocimiento sobre experiencias con Redshift](documentacion/experienciasRedshift.md)
+
+### **2. Propuesta de Solución**
+
+* [Propuesta de DDL para optimizar la tabla](deliverables/propuesta_ddl_historico_pagos.sql)
+
+### **3. Manejo de Casos Extremos**
+
+* [Banco de conocimiento y lecciones aprendidas con Redshift](documentacion/leccionesAprendidasRedshift.md)
 
 ---
 
-### 2. Propuesta de Solución  
-[Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
+## 🚀 Ejercicio 2: ETL Incremental con Restricciones Reales
 
+**Objetivo:** Consolidar datos de 200 bases de datos MySQL locales, con conectividad intermitente, retrasos y duplicados.
 
-### 3. Manejo de casos edge 
-[Banco de conocimiento Redshift](documentacion/leccionesAprendidasRedshift.md)
+### **1. Diseño de Arquitectura en AWS**
 
-## 🚀 Ejercicio dos. ETL INCREMENTAL CON RESTRICCIONES REALES.
+* [Propuesta de arquitectura para sucursales en AWS](deliverables/AWS_arq_sucursales_propuesta_v1.md)
 
-### Contexto
-Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conectividad es intermitente; los datos pueden llegar con días de retraso y ocasionalmente duplicados.
+### **2. Manejo de Casos Extremos**
 
-### 1. Diseño de arquitectura AWS  
-[Propuesta de solución](deliverables/AWS_arq_sucursales_propuesta_v1.md)
-### 2. Manejo de casos edge  
-[Glue/PySpark Job](deliverables/casos_edge.py)
-### 3. Experiencias y aprendizajes  
-[Banco de conocimiento ETL](documentacion/experienciasETL.md)
+* [Job de Glue/PySpark para manejar duplicados y retrasos](deliverables/casos_edge.py)
 
-## 🚀 Ejercicio tres. ARQUITECTURA DE EVENTOS PARA CAMPO
+### **3. Experiencias y Aprendizajes**
 
-### Contexto del Problema
-Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos capturar eventos (geolocalización, fotos de pagos, confirmaciones) con conectividad limitada o nula.
+* [Banco de conocimiento sobre experiencias en ETL](documentacion/experienciasETL.md)
 
-### 1. Estrategia offline-first
-[Estrategia para offline-first](deliverables/offline-first.md)
-### 2. Pipeline de procesamiento serverless  
-[AWS pipeline serverless](deliverables/pipeline_serverless.md)
-### 3. Observabilidad y monitoreo  
-[Estrategia metricas y monitoreo](deliverables/monitoreo_flujo_campo.md)
+---
 
+## 🚀 Ejercicio 3: Arquitectura de Eventos para el Campo
 
-## 🚀 Ejercicio cuatro. INTEGRACIÓN PARA CUMPLIMIENTO REGULATORIO.
+**Objetivo:** Capturar datos de eventos (geolocalización, fotos, pagos) desde una aplicación móvil en zonas rurales con conectividad limitada.
 
-### Contexto del Problema
-El regulador requiere un reporte consolidado diario a las 6am con todos los movimientos del día anterior. El incumplimiento implica multas significativas.
-Consideraciones:
-- Datos provienen de 15 sistemas diferentes
-- Algunos sistemas se actualizan hasta las 4am
-- Alta disponibilidad es crítica
-- Precisión al centavo es mandatoria
-- Capacidad de regenerar reportes históricos
-### 1. Arquitectura resiliente
-[Arquitectura resiliente AWS](deliverables/propuesta_solucion_cumpRegulatorio.md)
-### 2. Orquestación con Step Functions 
-[StepFunctions Propuesta](deliverables/step_functions_reporte_regulatorio.md)
-### 3. Decisiones críticas
-[Plan de contigencia y decisiones críticas](deliverables/decisiones_criticas_cumpReg.md)
+### **1. Estrategia "Offline-First"**
 
+* [Estrategia para una arquitectura offline-first](deliverables/offline-first.md)
 
-## 🚀 Ejercicio cinco. GOBIERNO DE DATOS Y AWS DATAZONE.
+### **2. Pipeline de Procesamiento "Serverless"**
 
-[Banco de conocimiento Gobierno de datos](documentacion/data_gobernance.md)
+* [Diseño del pipeline serverless en AWS](deliverables/pipeline_serverless.md)
+
+### **3. Observabilidad y Monitoreo**
+
+* [Estrategia de métricas y monitoreo para el flujo de campo](deliverables/monitoreo_flujo_campo.md)
+
+---
+
+## 🚀 Ejercicio 4: Integración para Cumplimiento Regulatorio
+
+**Objetivo:** Entregar un reporte consolidado diario a las 6:00 a.m. para el regulador, con datos de 15 sistemas diferentes y alta disponibilidad.
+
+### **1. Arquitectura Resiliente**
+
+* [Propuesta de arquitectura resiliente en AWS](deliverables/propuesta_solucion_cumpRegulatorio.md)
+
+### **2. Orquestación con Step Functions**
+
+* [Propuesta de orquestación con AWS Step Functions](deliverables/step_functions_reporte_regulatorio.md)
+
+### **3. Decisiones Críticas**
+
+* [Plan de contingencia y decisiones críticas](deliverables/decisiones_criticas_cumpReg.md)
+
+---
+
+## 🚀 Ejercicio 5: Gobierno de Datos y AWS DataZone
+
+* [Banco de conocimiento sobre gobierno de datos](documentacion/data_gobernance.md)
