@@ -1,4 +1,7 @@
 ### Orquestación con Step Functions
+- Mi mayor experiencia en orquestación ha sido con Airflow, sobre todo en Cloud Composer de GCP.
+- Esta es mi propuesta pensando cómo lo haría en airflow pero sobre StepFunctions.
+- No es un lift and shift de airflow a StepFunctions, para el flujo consideré las ventajas y susos de StepFunctions.
 1. Pasos en StepFunctions
 - El pipeline de StepFunction se ejecutará a las 2am. Así tenemos un margen de tiempo para procesar los datos del día anterior.
 - Se lanzará un Glue Job para procesar los datos de Kinesis y cargarlos en el datalake de S3.
