@@ -1,13 +1,13 @@
 # Podemos Progresar
 
-## 🚀 Ejercicio uno.
+## 🚀 Ejercicio uno. OPTIMIZACIÓN DE REDSHIFT - CASOS REALES 
 
 ### Contexto del Problema
 Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**. Como resultado, los reportes críticos que antes se ejecutaban en **5 minutos** ahora tardan **45 minutos**, impactando significativamente la velocidad de las decisiones de negocio.
 
 ---
 
-### 1. Diagnóstico Inicial
+### 1. Diagnóstico Inicial.
 
 * **¿Cuáles serían tus primeros 5 queries para entender el problema?  
   [Queries profiling redshift](deliverables/pagos_historicos_query_profiling.sql).
@@ -24,10 +24,10 @@ Nuestra tabla de pagos históricos ha crecido a **2 mil millones de registros**.
 [Propuesta de solución](deliverables/propuesta_ddl_historico_pagos.sql)
 
 
-### 3. Manejo de casos edge  
+### 3. Manejo de casos edge 
 [Banco de conocimiento Redshift](documentacion/leccionesAprendidasRedshift.md)
 
-## 🚀 Ejercicio dos.
+## 🚀 Ejercicio dos. ETL INCREMENTAL CON RESTRICCIONES REALES.
 
 ### Contexto
 Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conectividad es intermitente; los datos pueden llegar con días de retraso y ocasionalmente duplicados.
@@ -39,7 +39,7 @@ Necesitamos consolidar datos de 200 sucursales con bases MySQL locales. La conec
 ### 3. Experiencias y aprendizajes  
 [Banco de conocimiento ETL](documentacion/experienciasETL.md)
 
-## 🚀 Ejercicio tres.
+## 🚀 Ejercicio tres. ARQUITECTURA DE EVENTOS PARA CAMPO
 
 ### Contexto del Problema
 Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos capturar eventos (geolocalización, fotos de pagos, confirmaciones) con conectividad limitada o nula.
@@ -52,7 +52,7 @@ Nuestros oficiales de crédito usan apps móviles en zonas rurales. Necesitamos 
 [Estrategia metricas y monitoreo](deliverables/monitoreo_flujo_campo.md)
 
 
-## 🚀 Ejercicio cuatro.
+## 🚀 Ejercicio cuatro. INTEGRACIÓN PARA CUMPLIMIENTO REGULATORIO.
 
 ### Contexto del Problema
 El regulador requiere un reporte consolidado diario a las 6am con todos los movimientos del día anterior. El incumplimiento implica multas significativas.
@@ -68,3 +68,8 @@ Consideraciones:
 [StepFunctions Propuesta](deliverables/step_functions_reporte_regulatorio.md)
 ### 3. Decisiones críticas
 [Plan de contigencia y decisiones críticas](deliverables/decisiones_criticas_cumpReg.md)
+
+
+## 🚀 Ejercicio cinco. GOBIERNO DE DATOS Y AWS DATAZONE.
+
+[Banco de conocimiento Gobierno de datos](documentacion/data_gobernance.md)
