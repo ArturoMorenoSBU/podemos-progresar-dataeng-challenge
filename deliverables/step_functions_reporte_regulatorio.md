@@ -12,3 +12,7 @@
 - Si una tarea falla repetidamente, StepFunctions puede notificar a través de SNS al equipo técnico.
 - Se puede volver a ejecutar desde un checkpoint en el pipeline si un error necesita ser manejado de forma manual.
 - El pipeline está diseñado para ejecutarse varias veces y traer el mismo resultado (idempotencia). Los Glue Jobs reescriben los archivos en particiones de S3 y los datos de Redshift; se garantiza que no hay duplicados ni datos corrompidos.
+2. Estrategia de Rollback.
+- S3 actúa como fuente de la verdad inmutable, entonces una estrategia tradicional de rollback no es necesaria.
+- El sistema es idempotente. Glue reescribe en las particiones de S3 y en Redshift, entonces nos protegemos contra datos duplicados o corrompidos.
+- Es un enfoque de retry y corrección.
