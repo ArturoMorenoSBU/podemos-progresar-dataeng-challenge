@@ -1,3 +1,8 @@
+
+Hola amigo soy Eric tambien tuve el mismo proceso y prueba de reclutamiento que tu para la misma compañia.
+tel 55 65257568.
+
+
 # Podemos Progresar
 
 Este repositorio contiene las propuestas técnicas para resolver desafíos de ingeniería de datos, optimización y cumplimiento regulatorio, adaptadas a las necesidades de una microfinanciera como Podemos Progresar.
